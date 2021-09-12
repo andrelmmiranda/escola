@@ -1,0 +1,1 @@
+exports.responseError = (error, response, errorMessage) => error && response.status(500).send(errorMessage);

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+   <title>Escola</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="row mt-5">
+                    <div class="col-6"> 
+                        <h1>Cadastrar Professor</h1>
+                    </div>   
+                    <div class="col-6 text-right">
+                        <a href="/listar" class="btn btn-primary my-3 text-center">Lista de Professores</a> 
+                    </div>
+                </div>
+                <form class="mt-4" action="/cadastrar" method="POST">
+                    <div class = "form-group">
+                        <label for = "nome"> Nome </label>
+                        <input type = "text" class = "form-control" id = "nome" name = "nome" placeholder = "Ex .: José Lúcio">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "valor"> Registro. </label>
+                        <input type = "text" class = "form-control" id = "registro" name = "registro" placeholder = "Ex .: 12345" maxlength = "5">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "valor"> Disciplina </label>
+                        <input type = "text" class = "form-control" id = "disciplina" name = "disciplina" placeholder = "Ex .: História">
+                    </div>
+                    <div class = "form-group">
+                        <label for = "valor"> Qtd. horas </label>
+                        <input type = "text" class = "form-control" id = "qtdHoras" name = "qtdHoras" placeholder = "Ex .: 40" maxlength = "3">
+                    </div>
+                    <button type = "submit" class = "btn btn-primary" disabled> Enviar </button>
+                </form>   
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/utils/submitDisable.js"></script>
+    <script src="../public/js/utils/changeInput.js"></script>
+    <script src="../public/js/validaInsert.js"></script>
+</body>
+</html>

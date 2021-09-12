@@ -1,0 +1,1 @@
+exports.access = (data, database)=> data.replace('<key>', database);
